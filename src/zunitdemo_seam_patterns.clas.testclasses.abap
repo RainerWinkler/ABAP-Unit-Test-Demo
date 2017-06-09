@@ -3,7 +3,7 @@ CLASS ltcl_assign_from_test DEFINITION FINAL FOR TESTING
   RISK LEVEL HARMLESS.
 
   PRIVATE SECTION.
-    data: f_cut TYPE REF TO zunitdemo_seam_patterns.
+    DATA: f_cut TYPE REF TO zunitdemo_seam_patterns.
     METHODS:
       insert FOR TESTING RAISING cx_static_check.
 ENDCLASS.
@@ -47,15 +47,25 @@ CLASS ltcl_assign_from_test IMPLEMENTATION.
 *    END-TEST-INJECTION.
 
 
-    f_cut = new #( ).
+    f_cut = NEW #( ).
 
-    data result_act TYPE i.
+    DATA result_act TYPE i.
 
     result_act = f_cut->assign_from_test( ).
 
     cl_abap_unit_assert=>assert_equals( msg = 'Result is changed in test'
                                         exp = 10
                                         act = result_act ).
+
+    test_for_execution=>is_executed = abap_false.
+
+    TEST-INJECTION code_snippet.
+      test_for_execution=>is_executed = abap_true.
+    END-TEST-INJECTION.
+
+    cl_abap_unit_assert=>assert_equals( msg = 'Code Snippet has to be executed'
+                                        exp = abap_true
+                                        act = test_for_execution=>is_executed ).
 
   ENDMETHOD.
 

@@ -32,5 +32,9 @@ CLASS zunitdemo_seam_patterns IMPLEMENTATION.
 
     result = a.
 
+    TEST-SEAM code_snippet.
+
+    END-TEST-SEAM.
+
   ENDMETHOD.
 ENDCLASS.
