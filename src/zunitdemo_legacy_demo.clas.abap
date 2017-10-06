@@ -1,14 +1,14 @@
-class ZUNITDEMO_LEGACY_DEMO definition
-  public
-  final
-  create public .
+CLASS zunitdemo_legacy_demo DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
 
-public section.
-protected section.
-private section.
+  PUBLIC SECTION.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
 ENDCLASS.
 
 
 
-CLASS ZUNITDEMO_LEGACY_DEMO IMPLEMENTATION.
+CLASS zunitdemo_legacy_demo IMPLEMENTATION.
 ENDCLASS.
