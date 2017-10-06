@@ -6,8 +6,8 @@ CLASS zunitdemo_simple DEFINITION
   PUBLIC SECTION.
     METHODS constructor
       IMPORTING
-        date_for_test TYPE d OPTIONAL
-        ACTDATE_provider TYPE REF TO ZUNITDEMO_SIMPLE_ACTDATE OPTIONAL.
+        date_for_test    TYPE d OPTIONAL
+        actdate_provider TYPE REF TO zunitdemo_simple_actdate OPTIONAL.
     "! Returns the day of the actual date
     METHODS actual_day
       RETURNING
@@ -27,8 +27,15 @@ ENDCLASS.
 
 
 
-CLASS ZUNITDEMO_SIMPLE IMPLEMENTATION.
+CLASS zunitdemo_simple IMPLEMENTATION.
 
+
+  METHOD constructor.
+
+    g_date_for_test = date_for_test.
+    g_actdate_provider = actdate_provider.
+
+  ENDMETHOD.
 
   METHOD actual_day.
 
@@ -61,14 +68,16 @@ CLASS ZUNITDEMO_SIMPLE IMPLEMENTATION.
 
 
   METHOD actual_day3.
-    data(date) = g_ACTDATE_provider->get_date( ).
+
+    " Use a separate class with an instance methods
+    " to get the actual date.
+    " During tests inject a mock instance in the
+    " constructor.
+
+    DATA(date) = g_actdate_provider->get_date( ).
 
     r_result = date+6(2).
+
   ENDMETHOD.
 
-
-  METHOD constructor.
-    g_date_for_test = date_for_test.
-    g_ACTDATE_provider = ACTDATE_provider.
-  ENDMETHOD.
 ENDCLASS.
