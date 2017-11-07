@@ -7,11 +7,20 @@ CLASS ltcl_test DEFINITION FINAL FOR TESTING
   PRIVATE SECTION.
     DATA: f_cut TYPE REF TO zunitdemo_robust_seam2.
     METHODS:
+      setup,
       first_test FOR TESTING RAISING cx_static_check.
 ENDCLASS.
 
 
 CLASS ltcl_test IMPLEMENTATION.
+
+  METHOD setup.
+
+    TEST-INJECTION scarr.
+      cl_abap_unit_assert=>fail( msg = 'Redefine me' ).
+    END-TEST-INJECTION.
+
+  ENDMETHOD.
 
   METHOD first_test.
 
