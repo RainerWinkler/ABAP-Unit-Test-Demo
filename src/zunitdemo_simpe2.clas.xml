@@ -3,10 +3,10 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <VSEOCLASS>
-    <CLSNAME>ZUNITDEMO_ROBUST_SEAM</CLSNAME>
+    <CLSNAME>ZUNITDEMO_SIMPE2</CLSNAME>
     <VERSION>1</VERSION>
     <LANGU>E</LANGU>
-    <DESCRIPT>Make Seams so that they make no problems after enhancements</DESCRIPT>
+    <DESCRIPT>Demo 1</DESCRIPT>
     <EXPOSURE>2</EXPOSURE>
     <STATE>1</STATE>
     <CLSFINAL>X</CLSFINAL>

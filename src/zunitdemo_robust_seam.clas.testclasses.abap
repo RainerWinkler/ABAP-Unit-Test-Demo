@@ -35,7 +35,9 @@ CLASS ltcl_robust IMPLEMENTATION.
     f_cut->_get_airline_name( EXPORTING carrid = 'LH'
                               IMPORTING carrname = carrname_act ).
 
-    cl_abap_unit_assert=>assert_equals( msg = 'Lufthansa is the name of LH' exp = |Lufthansa| act = carrname_act ).
+    cl_abap_unit_assert=>assert_equals( msg = 'Lufthansa is the name of LH'
+                                        exp = |Lufthansa|
+                                        act = carrname_act ).
 
   ENDMETHOD.
 
