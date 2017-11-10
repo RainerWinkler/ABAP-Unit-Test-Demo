@@ -1,33 +1,40 @@
-class ltcl_test DEFINITION DEFERRED.
-class zunitdemo_barc2017_1 DEFINITION LOCAL FRIENDS ltcl_test.
-class ltcl_test definition final for testing
-  duration short
-  risk level harmless.
+CLASS ltcl_test DEFINITION DEFERRED.
+CLASS zunitdemo_barc2017_1 DEFINITION LOCAL FRIENDS ltcl_test.
+CLASS ltcl_test DEFINITION FINAL FOR TESTING
+  DURATION SHORT
+  RISK LEVEL HARMLESS.
 
-  private section.
-    data: f_cut TYPE REF TO zunitdemo_barc2017_1.
-    methods:
+  PRIVATE SECTION.
+    DATA: f_cut TYPE REF TO zunitdemo_barc2017_1.
+    METHODS:
       setup,
-      method1 for testing raising cx_static_check.
-endclass.
+      method1 FOR TESTING RAISING cx_static_check.
+ENDCLASS.
 
 
-class ltcl_test implementation.
+CLASS ltcl_test IMPLEMENTATION.
 
-  method setup.
+  METHOD setup.
+    TEST-INJECTION sy_datum.
+      cl_abap_unit_assert=>fail( msg = 'Redefine me' ).
+    END-TEST-INJECTION.
 
-  endmethod.
+  ENDMETHOD.
 
-  method method1.
+  METHOD method1.
 
-    f_cut = new #( ).
-    data: actual_date_act TYPE sy-datum.
+    TEST-INJECTION sy_datum.
+      r_result = |20171110|.
+    END-TEST-INJECTION.
+
+    f_cut = NEW #( ).
+    DATA: actual_date_act TYPE sy-datum.
     actual_date_act = f_cut->method1( ).
 
     cl_abap_unit_assert=>assert_equals( msg = 'Return today'
                                         exp = |20171110|
                                         act = actual_date_act ).
 
-  endmethod.
+  ENDMETHOD.
 
-endclass.
+ENDCLASS.
