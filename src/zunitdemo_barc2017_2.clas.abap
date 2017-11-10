@@ -13,10 +13,12 @@ ENDCLASS.
 
 
 
-CLASS ZUNITDEMO_BARC2017_2 IMPLEMENTATION.
+CLASS zunitdemo_barc2017_2 IMPLEMENTATION.
 
 
   METHOD actual_date.
-    r_result = sy-datum.
+    TEST-SEAM sy_datum.
+      r_result = sy-datum.
+    END-TEST-SEAM.
   ENDMETHOD.
 ENDCLASS.

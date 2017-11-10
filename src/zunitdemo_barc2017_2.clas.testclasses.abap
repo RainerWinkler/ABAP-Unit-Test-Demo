@@ -15,10 +15,16 @@ ENDCLASS.
 CLASS ltcl_test IMPLEMENTATION.
 
   METHOD setup.
-
+    TEST-INJECTION sy_datum.
+      cl_abap_unit_assert=>fail( msg = 'Redefine me' ).
+    END-TEST-INJECTION.
   ENDMETHOD.
 
   METHOD actual_date.
+
+    TEST-INJECTION sy_datum.
+      r_result = |20171110|.
+    END-TEST-INJECTION.
 
     f_cut = NEW #( ).
 
@@ -29,6 +35,7 @@ CLASS ltcl_test IMPLEMENTATION.
     cl_abap_unit_assert=>assert_equals( msg = 'Expect the correct day'
                                         exp = |20171110|
                                         act = actual_day_act ).
+
 
   ENDMETHOD.
 
