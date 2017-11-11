@@ -18,6 +18,7 @@ CLASS ltcl_test IMPLEMENTATION.
     TEST-INJECTION sy_datum.
       cl_abap_unit_assert=>fail( msg = 'Redefine me' ).
     END-TEST-INJECTION.
+
   ENDMETHOD.
 
   METHOD actual_date.
