@@ -13,12 +13,10 @@ ENDCLASS.
 
 
 
-CLASS ZUNITDEMO_SIMPL4 IMPLEMENTATION.
+CLASS zunitdemo_simpl4 IMPLEMENTATION.
 
 
   METHOD get_actual_day.
-
-    " Branch Test 001
 
     DATA: date TYPE sy-datum.
 
