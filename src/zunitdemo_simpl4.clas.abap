@@ -20,6 +20,8 @@ CLASS zunitdemo_simpl4 IMPLEMENTATION.
 
     DATA: date TYPE sy-datum.
 
+          " Test 002
+
     TEST-SEAM sy_datum.
 
       date = sy-datum.
