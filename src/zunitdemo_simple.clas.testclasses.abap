@@ -77,9 +77,9 @@ CLASS ltcl_demo IMPLEMENTATION.
 *                         double_name =
                ).
 
-    " Specify that 20170102 is returned
+    " Specify that 20170102 is returned,
     cl_abap_testdouble=>configure_call( double = actdate_interface )->returning( value = '20170102' ).
-    " When this method is called
+    " when this method is called
     actdate_interface->get_date( ).
 
 
