@@ -7,7 +7,8 @@ CLASS zunitdemo_simple DEFINITION
     METHODS constructor
       IMPORTING
         date_for_test    TYPE d OPTIONAL
-        actdate_provider TYPE REF TO zunitdemo_simple_actdate OPTIONAL.
+        actdate_provider TYPE REF TO zunitdemo_simple_actdate OPTIONAL
+        actdate_interface TYPE REF TO zunitdemo_interface_actdate OPTIONAL.
     "! Returns the day of the actual date
     METHODS actual_day
       RETURNING
@@ -18,24 +19,21 @@ CLASS zunitdemo_simple DEFINITION
     METHODS actual_day3
       RETURNING
         VALUE(r_result) TYPE numc2.
+    METHODS actual_day4
+      RETURNING
+        VALUE(r_result) TYPE numc2.
 
   PROTECTED SECTION.
   PRIVATE SECTION.
     DATA g_date_for_test TYPE d.
     DATA g_actdate_provider TYPE REF TO zunitdemo_simple_actdate.
+    DATA g_actdate_interface TYPE REF TO zunitdemo_interface_actdate.
 ENDCLASS.
 
 
 
-CLASS zunitdemo_simple IMPLEMENTATION.
+CLASS ZUNITDEMO_SIMPLE IMPLEMENTATION.
 
-
-  METHOD constructor.
-
-    g_date_for_test = date_for_test.
-    g_actdate_provider = actdate_provider.
-
-  ENDMETHOD.
 
   METHOD actual_day.
 
@@ -80,4 +78,25 @@ CLASS zunitdemo_simple IMPLEMENTATION.
 
   ENDMETHOD.
 
+
+  METHOD actual_day4.
+
+    " Use an interface
+    " to get the actual date.
+    " Use the test double framework in the Unit Test.
+
+    DATA(date) = g_actdate_interface->get_date( ).
+
+    r_result = date+6(2).
+
+  ENDMETHOD.
+
+
+  METHOD constructor.
+
+    g_date_for_test = date_for_test.
+    g_actdate_provider = actdate_provider.
+    g_actdate_interface = actdate_interface.
+
+  ENDMETHOD.
 ENDCLASS.
