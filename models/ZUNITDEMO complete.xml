@@ -7,8 +7,8 @@
         <type>FAMIXMethod</type>
         <class>ZUNITDEMO_SIMPL3</class>
         <method>ACTUAL_DAY</method>
-        <x>-447.0</x>
-        <y>-97.0</y>
+        <x>-534.0</x>
+        <y>-106.0</y>
     </element>
     <element>
         <type>FAMIXMethod</type>
@@ -27,22 +27,22 @@
         <type>FAMIXMethod</type>
         <class>ZUNITDEMO_ROBUST_SEAM2</class>
         <method>_GET_AIRLINE_NAME</method>
-        <x>-465.0</x>
-        <y>104.0</y>
+        <x>-703.0</x>
+        <y>185.0</y>
     </element>
     <element>
         <type>FAMIXMethod</type>
         <class>ZUNITDEMO_SIMPLE_ACTDATE</class>
         <method>GET_DATE</method>
-        <x>-203.0</x>
-        <y>132.0</y>
+        <x>-330.0</x>
+        <y>67.0</y>
     </element>
     <element>
         <type>FAMIXMethod</type>
         <class>ZUNITDEMO_SIMPE2</class>
         <method>ACTUAL_DAY</method>
-        <x>-459.0</x>
-        <y>302.0</y>
+        <x>-525.0</x>
+        <y>218.0</y>
     </element>
     <element>
         <type>FAMIXClass</type>
@@ -71,14 +71,14 @@
     <element>
         <type>FAMIXClass</type>
         <class>ZUNITDEMO_SIMPLE_ACTDATE_MOCK</class>
-        <x>-168.0</x>
-        <y>255.0</y>
+        <x>-373.0</x>
+        <y>257.0</y>
     </element>
     <element>
         <type>FAMIXClass</type>
         <class>ZUNITDEMO_SIMPE2</class>
-        <x>-459.0</x>
-        <y>313.0</y>
+        <x>-525.0</x>
+        <y>229.0</y>
     </element>
     <element>
         <type>FAMIXClass</type>
@@ -90,22 +90,29 @@
         <type>FAMIXMethod</type>
         <class>ZUNITDEMO_SIMPLE</class>
         <method>ACTUAL_DAY2</method>
-        <x>-319.0</x>
-        <y>-18.0</y>
+        <x>-411.0</x>
+        <y>-36.0</y>
     </element>
     <element>
         <type>FAMIXMethod</type>
         <class>ZUNITDEMO_SIMPLE_ACTDATE_MOCK</class>
         <method>GET_DATE</method>
-        <x>-203.0</x>
-        <y>258.0</y>
+        <x>-398.0</x>
+        <y>239.0</y>
     </element>
     <element>
         <type>FAMIXMethod</type>
         <class>ZUNITDEMO_SIMPL4</class>
         <method>GET_ACTUAL_DAY</method>
-        <x>-319.0</x>
-        <y>70.0</y>
+        <x>-569.0</x>
+        <y>144.0</y>
+    </element>
+    <element>
+        <type>FAMIXMethod</type>
+        <class>ZUNITDEMO_SEAM_PATTERNS</class>
+        <method>ASSIGN_FROM_TEST</method>
+        <x>-536.0</x>
+        <y>-5.0</y>
     </element>
     <element>
         <type>FAMIXClass</type>
@@ -114,30 +121,23 @@
         <y>105.0</y>
     </element>
     <element>
-        <type>FAMIXMethod</type>
-        <class>ZUNITDEMO_SEAM_PATTERNS</class>
-        <method>ASSIGN_FROM_TEST</method>
-        <x>-474.0</x>
-        <y>-7.0</y>
-    </element>
-    <element>
         <type>FAMIXAttribute</type>
         <class>ZUNITDEMO_SIMPLE</class>
         <attribute>G_DATE_FOR_TEST</attribute>
-        <x>-310.0</x>
-        <y>-43.0</y>
+        <x>-401.0</x>
+        <y>-61.0</y>
     </element>
     <element>
         <type>FAMIXClass</type>
         <class>ZUNITDEMO_ROBUST_SEAM</class>
-        <x>-411.0</x>
-        <y>236.0</y>
+        <x>-659.0</x>
+        <y>277.0</y>
     </element>
     <element>
         <type>FAMIXClass</type>
         <class>ZUNITDEMO_SEAM_PATTERNS</class>
-        <x>-475.0</x>
-        <y>4.0</y>
+        <x>-536.0</x>
+        <y>7.0</y>
     </element>
     <element>
         <type>FAMIXMethod</type>
@@ -150,8 +150,8 @@
         <type>FAMIXMethod</type>
         <class>ZUNITDEMO_ROBUST_SEAM</class>
         <method>_GET_AIRLINE_NAME</method>
-        <x>-411.0</x>
-        <y>225.0</y>
+        <x>-659.0</x>
+        <y>267.0</y>
     </element>
     <element>
         <type>FAMIXMethod</type>
@@ -163,8 +163,8 @@
     <element>
         <type>FAMIXClass</type>
         <class>ZUNITDEMO_SIMPLE</class>
-        <x>-241.0</x>
-        <y>-20.0</y>
+        <x>-333.0</x>
+        <y>-38.0</y>
         <comment><![CDATA[A class with examples how to handle dependencies]]>
         </comment>
         <commentx>-164.0</commentx>
@@ -173,28 +173,28 @@
     <element>
         <type>FAMIXClass</type>
         <class>ZUNITDEMO_ROBUST_SEAM2</class>
-        <x>-465.0</x>
-        <y>115.0</y>
+        <x>-703.0</x>
+        <y>197.0</y>
     </element>
     <element>
         <type>FAMIXMethod</type>
         <class>ZUNITDEMO_SIMPLE</class>
         <method>ACTUAL_DAY3</method>
-        <x>-204.0</x>
-        <y>-18.0</y>
+        <x>-267.0</x>
+        <y>-34.0</y>
     </element>
     <element>
         <type>FAMIXAttribute</type>
         <class>ZUNITDEMO_SIMPLE_ACTDATE_MOCK</class>
         <attribute>G_TEST_DAY</attribute>
-        <x>-198.0</x>
-        <y>233.0</y>
+        <x>-340.0</x>
+        <y>265.0</y>
     </element>
     <element>
         <type>FAMIXClass</type>
         <class>ZUNITDEMO_SIMPL3</class>
-        <x>-447.0</x>
-        <y>-86.0</y>
+        <x>-534.0</x>
+        <y>-94.0</y>
     </element>
     <element>
         <type>FAMIXMethod</type>
@@ -211,14 +211,14 @@
         <type>FAMIXMethod</type>
         <class>ZUNITDEMO_SIMPLE</class>
         <method>ACTUAL_DAY</method>
-        <x>-161.0</x>
-        <y>-43.0</y>
+        <x>-480.0</x>
+        <y>-37.0</y>
     </element>
     <element>
         <type>FAMIXClass</type>
         <class>ZUNITDEMO_SIMPL4</class>
-        <x>-319.0</x>
-        <y>81.0</y>
+        <x>-569.0</x>
+        <y>155.0</y>
     </element>
     <element>
         <type>FAMIXMethod</type>
@@ -231,8 +231,15 @@
         <type>FAMIXMethod</type>
         <class>ZUNITDEMO_SIMPLE_ACTDATE_MOCK</class>
         <method>CONSTRUCTOR</method>
-        <x>-143.0</x>
-        <y>233.0</y>
+        <x>-347.0</x>
+        <y>236.0</y>
+    </element>
+    <element>
+        <type>FAMIXMethod</type>
+        <class>ZUNITDEMO_SIMPLE</class>
+        <method>ACTUAL_DAY4</method>
+        <x>-202.0</x>
+        <y>-22.0</y>
     </element>
     <element>
         <type>FAMIXAttribute</type>
@@ -245,8 +252,8 @@
         <type>FAMIXMethod</type>
         <class>ZUNITDEMO_SIMPLE</class>
         <method>CONSTRUCTOR</method>
-        <x>-262.0</x>
-        <y>-18.0</y>
+        <x>-353.0</x>
+        <y>-36.0</y>
     </element>
     <element>
         <type>FAMIXMethod</type>
@@ -254,6 +261,12 @@
         <method>ACTUAL_DAY</method>
         <x>850.0</x>
         <y>94.0</y>
+    </element>
+    <element>
+        <type>FAMIXClass</type>
+        <class>ZUNITDEMO_INTERFACE_ACTDATE</class>
+        <x>-210.0</x>
+        <y>136.0</y>
     </element>
     <element>
         <type>FAMIXClass</type>
@@ -290,11 +303,22 @@
         <y>94.0</y>
     </element>
     <element>
+        <type>FAMIXMethod</type>
+        <class>ZUNITDEMO_INTERFACE_ACTDATE</class>
+        <method>GET_DATE</method>
+        <x>-210.0</x>
+        <y>125.0</y>
+        <comment><![CDATA[Is tested with the ABAP Test Double Framework]]>
+        </comment>
+        <commentx>-185.0</commentx>
+        <commenty>183.0</commenty>
+    </element>
+    <element>
         <type>FAMIXAttribute</type>
         <class>ZUNITDEMO_SIMPLE</class>
         <attribute>G_ACTDATE_PROVIDER</attribute>
-        <x>-230.0</x>
-        <y>-43.0</y>
+        <x>-321.0</x>
+        <y>-61.0</y>
     </element>
     <element>
         <type>FAMIXMethod</type>
@@ -306,7 +330,14 @@
     <element>
         <type>FAMIXClass</type>
         <class>ZUNITDEMO_SIMPLE_ACTDATE</class>
-        <x>-203.0</x>
-        <y>143.0</y>
+        <x>-331.0</x>
+        <y>79.0</y>
+    </element>
+    <element>
+        <type>FAMIXAttribute</type>
+        <class>ZUNITDEMO_SIMPLE</class>
+        <attribute>G_ACTDATE_INTERFACE</attribute>
+        <x>-253.0</x>
+        <y>-73.0</y>
     </element>
 </elements>
