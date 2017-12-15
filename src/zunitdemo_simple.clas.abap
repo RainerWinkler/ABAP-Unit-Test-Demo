@@ -42,6 +42,7 @@ CLASS ZUNITDEMO_SIMPLE IMPLEMENTATION.
     TEST-SEAM sy_datum.
 
       DATA(date) = sy-datum.
+      " A change
 
     END-TEST-SEAM.
 
