@@ -1,0 +1,23 @@
+CLASS zunitdemo_barc2017_7 DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+    METHODS actual_day
+      RETURNING VALUE(date) TYPE d.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS zunitdemo_barc2017_7 IMPLEMENTATION.
+
+  METHOD actual_day.
+    TEST-SEAM date.
+      date = sy-datum.
+    END-TEST-SEAM.
+  ENDMETHOD.
+
+ENDCLASS.
