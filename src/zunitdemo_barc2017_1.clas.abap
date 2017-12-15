@@ -17,6 +17,7 @@ CLASS zunitdemo_barc2017_1 IMPLEMENTATION.
 
   METHOD method1.
     " Test Comment
+    " Adapt comment as demo
     TEST-SEAM sy_datum.
       r_result = sy-datum.
     END-TEST-SEAM.
