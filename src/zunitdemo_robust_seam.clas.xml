@@ -4,12 +4,9 @@
   <asx:values>
    <VSEOCLASS>
     <CLSNAME>ZUNITDEMO_ROBUST_SEAM</CLSNAME>
-    <VERSION>1</VERSION>
     <LANGU>E</LANGU>
     <DESCRIPT>Make Seams so that they make no problems after enhancements</DESCRIPT>
-    <EXPOSURE>2</EXPOSURE>
     <STATE>1</STATE>
-    <CLSFINAL>X</CLSFINAL>
     <CLSCCINCL>X</CLSCCINCL>
     <FIXPT>X</FIXPT>
     <UNICODE>X</UNICODE>
