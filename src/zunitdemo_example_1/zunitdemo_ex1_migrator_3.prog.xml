@@ -3,7 +3,7 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <PROGDIR>
-    <NAME>ZUNITDEMO_EX1_MIGRATOR_2</NAME>
+    <NAME>ZUNITDEMO_EX1_MIGRATOR_3</NAME>
     <SUBC>1</SUBC>
     <RSTAT>K</RSTAT>
     <RLOAD>E</RLOAD>
@@ -33,7 +33,7 @@
     <item>
      <DOKIL>
       <ID>RE</ID>
-      <OBJECT>ZUNITDEMO_EX1_MIGRATOR_2</OBJECT>
+      <OBJECT>ZUNITDEMO_EX1_MIGRATOR_3</OBJECT>
       <LANGU>E</LANGU>
       <TYP>E</TYP>
       <VERSION>0001</VERSION>
@@ -43,7 +43,7 @@
      </DOKIL>
      <HEAD>
       <TDOBJECT>DOKU</TDOBJECT>
-      <TDNAME>ZUNITDEMO_EX1_MIGRATOR_2</TDNAME>
+      <TDNAME>ZUNITDEMO_EX1_MIGRATOR_3</TDNAME>
       <TDID>RE</TDID>
       <TDSPRAS>E</TDSPRAS>
       <TDFORM>S_DOCU_SHOW</TDFORM>
